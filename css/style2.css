@@ -1,0 +1,4248 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&display=swap');
+
+
+body, html{
+	height: 100%;
+	width:100%;
+}
+body{
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/* ========== Universal Stylings ========== */
+h1,h2,h3,h4,h5{
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+}
+h2 {
+	font-size: 30px;
+	font-weight: 600;
+}
+h6{
+	position: relative;
+}
+
+
+.btn{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	
+}
+.btn-primary{
+	background-color: #f7911d;
+	border-color: #f7911d;
+}
+
+.site-color {
+	color: #f7911d!important;
+}
+
+.text-orange {
+	color: #f7911d!important;
+}
+
+
+/* ========== Top Navigation ========== */
+
+.navbar.navbar-expand-lg {
+	background: rgba( 234, 234, 234, 0.8);
+}
+
+.top-nav {
+    height: 80px;
+    transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+}
+
+.top-nav .navbar-nav li .nav-link {
+    color: #fff;
+    font-size: 15px;
+    padding:6px 26px;
+    margin: 6px 5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+}
+	.top-nav .navbar-nav li a.dropdown-toggle::after {
+		margin-left: 8px!important;
+	}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background: rgba( 234, 234, 234, 0.8);
+}
+	.navbar-expand-lg .navbar-nav .dropdown-menu a{
+	    padding-left: 70px!important;
+	    padding-right: 70px!important;
+	}
+
+.navbar-brand img {
+	width: 240px;
+}
+	.navbar-brand img:hover, .navbar-brand img:focus{
+	opacity: 0.8;
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	}
+
+.top-nav.light-header{
+	height: 60px;
+	background: rgba(0,0,0,0.6);
+	box-shadow: 0 0 10px rgba(0,0,0,0.23);
+	transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+	z-index: 9999;
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus{
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color: transparent;
+		border-color:  #f7911e;
+		color: #404041!important;
+}
+
+header ul li a {
+	text-transform: uppercase;
+	color: #404041!important;
+	font-size: 15px!important;
+	font-weight: 600!important;
+	padding-right: 21px!important;
+	padding-left: 21px!important;
+	margin-right: 2px!important;
+	border-bottom: 2px solid transparent;
+
+}
+	header ul button.btn.btn-primary {
+		color: #fff;
+		font-size: 16px!important;
+		padding: 17px 46px!important;
+		margin-left: 10px;
+	}
+
+.navbar-nav li a.nav-link:hover, 
+.navbar-nav .nav-item.active a.nav-link {
+	border-bottom: 2px solid #f7911d!important;
+	padding: 17px 21px!important;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+ }
+
+ .hero {
+ 	background: url("../img/hero.png");
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size:cover;
+	height: 746px;
+	display: grid;
+    vertical-align: middle;
+}
+
+.hero .row .col-12 {
+	display: grid;
+    vertical-align: middle;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 600;
+	color: #fff;
+}
+
+#exampleModalCenter.modal {}
+#exampleModalCenter.modal .modal-header {}
+#exampleModalCenter.modal .modal-header .modal-title {
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 26px;
+    line-height: 1.4;
+    font-weight: 100;
+}
+#exampleModalCenter.modal .modal-header .modal-title {
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+}
+#exampleModalCenter.modal .modal-body {
+	background: #f7f9fc;
+}
+#exampleModalCenter.modal .modal-body p {
+	font-weight: 100;
+	line-height: 1.4;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+#exampleModalCenter.modal .modal-body .form-group label {
+	letter-spacing: .05em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5em 0;
+    font-family: 'Roboto+Slab', sans-serif;
+}
+#exampleModalCenter.modal .modal-body .form-group input {
+	width: 100%;
+    border: 1px solid rgba(114,117,129,.3);
+    border-radius: 3px;
+    padding: 25px 10px;
+    outline: none;
+    font-size: 13px;
+    font-family: 'Roboto+Slab', sans-serif;
+
+}
+#exampleModalCenter.modal form button {
+	background-color: #f7911e;
+    border-color: #f7911e;
+    padding: 22px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    font-family: 'Roboto+Slab', sans-serif;
+}
+
+/* ========== ALL PAGES ========== */
+
+#exampleModal.login-form .modal-dialog {
+	max-width: 600px;
+}
+#exampleModal.login-form .modal-content {
+	background-color: #f2f2f2;
+	border-radius: 0px;
+	padding: 30px;
+}
+	#exampleModal.login-form .modal-content  .modal-title {
+	  font-size: 60px;
+	  color: #f7911e;
+	  line-height: 1.167;
+	  font-weight: 100;
+	  font-family: 'Roboto', sans-serif;
+	}
+	#exampleModal.login-form .modal-content input {
+		padding: 25px;
+		font-family: 'Roboto+Slab', sans-serif;
+	}
+	#exampleModal.login-form .modal-content .form-group label {
+		text-transform: uppercase;
+		color: #3a3a3c;
+		font-size: 16px;
+		font-weight: 100;
+		font-family: 'Roboto+Slab', sans-serif;
+	}
+	#exampleModal.login-form .modal-content p {
+		font-size: 18px;
+		font-weight: 100;
+		color: #3a3a3c;
+		font-family: 'Roboto', sans-serif;
+	}
+	#exampleModal.login-form .modal-content button {
+	  font-size: 20px;
+	  font-weight: 600;
+	  padding-left: 110px;
+	  padding-right: 110px;
+	  font-family: 'Roboto+Slab', sans-serif;
+	}
+	#exampleModal.login-form .modal-content button#close {
+		margin: 0px;
+		padding: 0px;
+	}
+	#exampleModal.login-form .modal-content button#close span {
+		float: right;
+		margin: 0px;
+		padding: 0px;
+	}
+button#my_style_bttn {
+	height: 72px;
+    width: 72px;
+    border-radius: 50%;
+	background-color: #f7911e;
+    border-color: #f7911e;
+    border: 0px solid #f7911e;
+}
+	button#my_style_bttn img {
+		height: 40px;
+		margin-left: 6px;
+	}
+	button#my_style_bttn:visited, button#my_style_bttn:hover, button#my_style_bttn:focus, button#my_style_bttn:active {
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+	    background-color: #fff!important;
+	    border-color: #fff!important;
+	}
+.btn-focus-visited:visited, .btn-focus-visited:focus, .btn-focus-visited:active {
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+    background-color: #f7911e!important;
+    border-color: #f7911e!important;
+}
+/* ========== END ALL PAGES ========== */
+
+
+/* ========== Main Page Style ========== */
+#main-page-head h1 {
+	font-size: 50px;
+	font-weight: 800;
+	color: #fff;
+}
+
+#main-page-head .carousel .carousel-caption {
+ 	top: 40%;
+}
+
+#drive {
+	background-color: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	#drive p {
+	color: #727272;
+	font-size: 16px;
+	margin-top: 45px;
+	margin-bottom: 55px;
+	font-weight: 500;
+	}
+	#drive button {
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #f7911e;
+		border-color: #f7911e;
+		padding: 18px 48px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	#drive .btn-primary:hover, #drive .btn-primary:focus{
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color: transparent;
+		border-color:  #f7911e;
+		color: #404041!important;
+	}
+
+
+#ship {
+	background-color: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	#ship h2 {
+		color: #f7911d!important;
+	}
+	#ship img {
+		padding-top: 63px;
+		padding-bottom: 13px;
+		margin-right: 20px;
+	}
+	#ship p {
+		color: #727272;
+		font-size: 16px;
+		margin-top: 45px;
+		margin-bottom: 55px;
+		font-weight: 500;
+		}
+		#ship button {
+			text-transform: uppercase;
+		    color: #fff;
+		    background-color: #f7911e;
+		    border-color: #f7911e;
+		    padding: 18px 48px;
+		    font-size: 14px;
+		    font-weight: 500;
+		}
+		#ship .btn-primary:hover, #drive .btn-primary:focus{
+		    transition: 0.2s ease-in;
+		    -webkit-transition: 0.2s ease-in;
+		    -moz-transition: 0.2s ease-in;
+		    background-color: transparent;
+		    border-color: #f7911e;
+		    color: #404041!important;
+		}
+
+#work {
+	background-color: #f7911e;
+	padding-top: 60px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+	#work h2 {
+		color: #fff!important;
+	}
+	#work img {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		margin-right: 30px;
+	}
+	#work p {
+		color: #fff;
+	    font-size: 16px;
+	    margin-top: 45px;
+	    margin-bottom: 55px;
+	    font-weight: 500;
+	}
+		#work button {
+			text-transform: uppercase;
+		    color: black;
+		    background-color: #fff;
+		    border-color: #fff;
+		    padding: 18px 48px;
+		    font-size: 14px;
+		    font-weight: 500;
+		    margin-bottom: 30px;
+		}
+		#work .btn-primary:hover, #drive .btn-primary:focus{
+		    transition: 0.2s ease-in;
+		    -webkit-transition: 0.2s ease-in;
+		    -moz-transition: 0.2s ease-in;
+		    background-color: #fff;
+		    border-color: black;
+		    color: #404041!important;
+		}
+
+#dispatch {
+	background-color: #f2f2f2;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+	#dispatch h2 {}
+	#dispatch img {
+		padding-top: 63px;
+		margin-right: 20px;
+	}
+	#dispatch p {
+		color: #727272;
+	    font-size: 16px;
+	    margin-top: 45px;
+	    margin-bottom: 55px;
+	    font-weight: 500;
+		}
+		#dispatch button {
+		    text-transform: uppercase;
+		    color: #fff;
+		    background-color: #f7911e;
+		    border-color: #f7911e;
+		    padding: 18px 48px;
+		    font-size: 14px;
+		    font-weight: 500;
+		}
+		#dispatch .btn-primary:hover, #drive .btn-primary:focus{
+			transition: 0.2s ease-in;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			background-color: #fff;
+			border-color:  black;
+			color: #404041!important;
+		}
+
+#sale {
+	background-color: #f7911e;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+	#sale  img {
+		padding-top: 0px;
+		padding-right: 0px;
+	}
+	#sale h2 {
+		color: #fff!important;
+	}
+	#sale  p {
+		color: #fff;
+		font-size: 16px;
+		margin-top: 45px;
+		margin-bottom: 55px;
+		font-weight: 500;
+		}
+		#sale  button {
+		    text-transform: uppercase;
+		    color: black;
+		    background-color: #fff;
+		    border-color: #fff;
+		    padding: 18px 48px;
+		    font-size: 14px;
+		    font-weight: 500;
+		}
+		#sale .btn-primary:hover, #drive .btn-primary:focus{
+			transition: 0.2s ease-in;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			background-color: #fff;
+			border-color:  black;
+			color: #404041!important;
+		}
+
+#footer {
+	background-color: #1e1e1e;
+	padding-bottom: 16px;
+	padding-top: 40px;
+}
+
+ul.footer-nav li a {
+	color: #fefefe;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	border-right: 2px solid white;
+	padding-top: 1px;
+	padding-bottom: 1px;
+
+}
+
+	ul.footer-nav li a.last-link {
+		border-right: 0px;
+	}
+	ul.footer-nav li a:hover, ul.footer-nav li a:focus{
+	opacity: 0.5;
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	}
+#footer .navbar-brand {
+	padding-top: 40px;
+	padding-bottom: 25px;
+}
+
+#footer .copyright {
+	font-size: 13px;
+	font-weight: 400;
+	color: #acaaaa;
+}
+
+#footer .copyright-1 {
+	border-top: 1px solid #555555;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+}
+
+#footer .copyright-2 {
+	border-bottom: 1px solid #555;
+	padding-bottom: 8px;
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+#footer ul.social-nav {
+	padding-left: 0px!important;
+	margin-bottom: 55px;
+}
+
+#footer ul.social-nav li a img {
+	width: 33px;
+}
+	#footer ul.social-nav li a img:hover, #footer ul.social-nav li a img:focus{
+	opacity: 0.7;
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 39px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+  background-color: white;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* instagram */
+.fa-instagram {
+  background: #ff4932;
+  color: white;
+  font-size: 32px;
+}
+
+/* Youtube */
+.fa-youtube {
+  background: #ff0000;
+  color: white;
+}
+
+/* Music */
+.fa-music {
+  background: #f0e464;
+  color: white;
+}
+
+
+/* ========== ABOUT US Page Style ========== */
+
+#about .carousel .carousel-caption {
+ 	top: 40%;
+}
+
+#about h1 {
+	font-size: 45px;
+	font-weight: 600px!important;
+  	line-height: 1.333;
+  	padding-bottom: 40px;
+  	margin-bottom: 0px;
+}
+
+#about .h1-bottom-about {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #fff;
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+#organizations {
+	background-color: #f2f2f2;
+	padding-top: 85px;
+	padding-bottom: 120px;
+}
+
+#organizations h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 92px;
+}
+
+#company {
+	padding-top: 85px;
+	padding-bottom: 90px;
+}
+
+#company h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 62px;
+}
+
+#company .card {
+	margin-bottom: 4px;
+	padding-bottom: 30px;
+	padding-top: 25px;
+	padding: 24px 10px 30px 10px;
+	border: 1px solid #cfcfcf;
+}
+
+#company .card h5.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.875;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+#company .card.bolster {
+	padding-bottom: 0px;
+}
+
+
+#buttons {
+	background-color: #565658;
+	padding-top: 35px;
+	padding-bottom: 30px;
+}
+
+#buttons  li a.btn.btn-primary {
+	background-color: #fff;
+	border-radius: 0;
+	border: 0px solid #fff;
+	font-size: 16px;
+	color: #171717;
+	font-weight: bold;
+	line-height: 2.25;
+	margin-bottom: 5px;
+}
+	#buttons  li a.btn.btn-primary:hover, #buttons  li a.btn.btn-primary:focus {
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color: #f7911d;
+		border-color: #f7911d;
+		color: #fff;
+	}
+
+	#buttons  li a.btn.btn-primary.active {
+		background-color: #f7911d;
+		border-radius: 0;
+		border: 0px solid #f7911d;
+		color: #fff;
+	}
+
+
+#courses {
+	background-color: #f2f2f2;
+	padding-top: 85px;
+	padding-bottom: 0px;
+}
+
+#courses .card {
+	border: 0px solid transparent;
+}
+	#courses .card .card-body {
+		padding-bottom: 0px;
+	}
+
+#courses .card h5.card-header {
+  font-size: 26px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.154;
+  text-align: center;
+  padding-bottom: 36px;
+  padding-top: 36px;
+  background-color: #565658;
+  margin-bottom: 0px
+  border: 0px;
+}
+
+#courses .card .card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+#courses .card h5.card-title {
+  font-size: 20px;
+  color: #171717;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: left;
+  padding-bottom: 13px;
+  padding-top: 10px;
+}
+
+#courses .card p.card-text {
+  font-size: 16px;
+  color: #727272;
+  font-weight: 500
+  line-height: 1.4;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+#courses .card p.price-top {
+	text-align: center;
+  	font-size: 16px;
+  	color: #585858;
+  	line-height: 1.75;
+  	font-weight: 500;
+	margin-bottom: 22px;
+}
+
+#courses .card p.price {
+	text-align: center;
+	color: #585858;
+	font-size: 40px;
+	line-height: 0.7;
+	font-weight: bold;
+	margin-bottom: 35px;
+}
+
+#courses a.btn.btn-primary {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 1.154;	
+	text-align: center;
+	background-color: #f7911d;
+	margin-bottom: 60px;
+	display: block;
+	border-radius: 0px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+	#courses a.btn.btn-primary:hover, #courses a.btn.btn-primary:focus{
+		opacity: 0.9;
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color:  #fff;
+		border-color: #f7911d;
+		color: #727272;	
+	}
+
+
+/* ========== DRIVE Page Style ========== */
+
+#drive_page .carousel .carousel-caption {
+ 	top: 30%;
+}
+
+#drive_page h1 {
+	font-size: 38px;
+	font-weight: 600px!important;
+  	line-height: 1.447;
+  	padding-bottom: 0px;
+  	margin-bottom: 0px;
+}
+
+ #h1-bottom-about {
+  font-size: 22px;
+  font-weight: 600px
+  line-height: 1.455;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+
+#drive_page .drive-page-button {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #f7911e;
+	border-color: #f7911e;
+	padding: 22px 30px;
+	font-size: 16px;
+  	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#drive_page .drive-page-button:hover,#drive_page .drive-page-button:focus{
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	background-color: transparent;
+	border-color:  #f7911e;
+	color: #fff!important;
+}
+
+#benefits {
+	background-color: #fff;
+	border: 1px solid #9c9c9c;
+	text-align: center;
+}
+
+#benefits p.benefit-text {
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 300px;
+	color: #171717;
+	line-height: 2.4;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#benefits .col-lg-4 {
+	border-right: 1px solid #9c9c9c;
+}
+
+#benefits .col-lg-4:nth-child(3) {
+	border-right: 0px solid transparent;	
+}
+
+#benefits #ben_1::before {
+     content: ""; 
+     background-image: url('../img/drive/benefits1.png');
+     background-size: cover;
+     width: 55px; 
+     height: 37px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 5px;
+}
+
+#benefits #ben_2::before {
+     content: ""; 
+     background-image: url('../img/drive/benefits2.png');
+     background-size: cover;
+     width: 53px; 
+     height: 44px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 5px;
+}
+
+#benefits #ben_3::before {
+     content: ""; 
+     background-image: url('../img/drive/benefits3.png');
+     background-size: cover;
+     width: 55px; 
+     height: 52px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 5px;
+}
+
+#drive_page #driver-type {
+	padding-top: 85px;
+	padding-bottom: 90px;
+}
+
+.h2-drive {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #171717;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  padding: 4px;
+  margin: 0px;
+}
+
+#drive_page #driver-type button:hover {
+	color: #585858!important;
+}
+
+#drive_page #driver-type .card {
+	margin-bottom: 60px;
+	margin-top: 60px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border: 0px solid #cfcfcf;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+	#drive_page #driver-type .card img {
+		width: 100px;
+	}
+	#drive_page #driver-type .card-text {
+	  font-size: 20px;
+	  font-family: "Montserrat";
+	  color: #585858;
+	  line-height: 2;
+	}
+
+#drive_page #solution {
+	background-color: #fcfbfb;
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+	#drive_page #solution .card img {
+		width: 117px;
+	}
+	#drive_page #solution button:hover {
+		color: #585858!important;
+	}
+	#drive_page #solution .card {
+		background-color: #fcfbfb;
+		margin-bottom: 115px;
+		margin-top: 115px;
+		padding-bottom: 0px;
+		padding-top: 0px;
+		border: 0px solid #cfcfcf;
+		padding-left: 0px;
+		padding-right: 0px;
+    }
+    #drive_page #solution .card-title{
+	  font-size: 20px;
+	  font-family: "Roboto";
+	  color: #585858;
+	  text-transform: uppercase;
+	  line-height: 1.8;
+	}
+	#drive_page #solution .card-text {
+	  font-size: 18px;
+	  font-family: "Montserrat";
+	  color: #171717;
+	  font-weight: bold;
+	  line-height: 1.667;
+	  text-align: center;
+	}
+	#drive_page #solution p.bottom-number {
+	  font-size: 14px;
+	  font-family: "Roboto";
+	  color: #575757;
+	  line-height: 5.143;
+	  padding-bottom: 15px;
+	  margin-bottom: 0px;
+	  padding-bottom: 0px;
+	}
+
+#drive_page #testimonials {
+
+}
+	#drive_page #testimonial {
+		display: table;
+ 		width: 100%;
+	}
+	#drive_page #testimonial .testimonials-hero {
+    background-image: url('../img/drive/man.jpg');
+	display: table-cell;
+	vertical-align: middle;
+	margin: 0 auto;
+    background-size: cover;
+    width: 100%;
+	height: 691px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	}
+	#drive_page #testimonial .test-main-text {
+		font-size: 28px;
+		color: #fff;
+		font-weight: 600;
+		line-height: 1.714;
+	}
+	#drive_page #testimonial .play-btn {
+		width: 70px;
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 0px;
+		margin-top: 64px;
+	}
+		#drive_page #testimonial .play-btn:hover {
+			transition: 0.2s ease-in;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			
+			 background-image:url("../img/play.png");
+		}
+	#drive_page #testimonial .test-play-text {
+		padding: 0px;
+		margin: 0px;
+		font-size: 16px;
+		font-family: "Roboto";
+		color: #fff;
+		line-height: 3;
+		text-transform: uppercase;
+	}
+	#drive_page #testimonials .container-fluid .row {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	#drive_page #testimonials .container-fluid .row .carousel-item {
+		padding-left: 0px;
+		padding-right: 0px
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-main-text {
+		padding: 0px;
+		margin: 0px;
+		font-size: 28px;
+		color: #fff;
+		font-weight: 600;
+		line-height: 1.714;
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img#play-btn {
+		width: 70px;
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 25px;
+		margin-top: 64px;
+	}
+		#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img.play-btn:hover {
+			transition: 0.2s ease-in;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			background-color: transparent;
+			opacity: 0.8;
+		}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-play-text {
+		padding: 0px;
+		margin: 0px;
+		font-size: 16px;
+		font-family: "Roboto";
+		color: #fff;
+		line-height: 3;
+	}
+
+
+#drive_page #testimonials-2 {
+	border: 1px solid #9c9c9c;
+	border-top: none;
+}
+	#drive_page #testimonials-2 .col-lg-4 {
+	    border-right: 1px solid #9c9c9c;
+	    padding-top: 18px;
+	    padding-bottom: 45px;
+	}
+	#drive_page #testimonials-2 img {}
+	#drive_page #testimonials-2 p.author-text {
+	  font-size: 14px;
+	  color: #585858;
+	  line-height: 2.143;
+	  font-weight: 500;
+	  margin-bottom: 0px;
+	  padding-top: 18px;
+	  padding-bottom: 45px;
+	}
+	#drive_page #testimonials-2 p.author {
+	  font-size: 18px;
+	  color: #171717;
+	  font-weight: 600;
+	  line-height: 1.667;
+	  margin-bottom: 0px;
+	}
+
+#drive_page #benefits-plan {
+	background-color: #f7f9fc;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+	#benefits-plan h2.h2-benefits-plan {
+	  font-size: 30px;
+	  font-family: "Montserrat";
+	  color: #171717;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  line-height: 1.333;
+	  padding: 4px;
+	  margin: 0px;
+	  padding-bottom: 85px;
+	}
+	#benefits-plan .benefits-box-text {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+	}
+	#benefits-plan .benefits-box-text {
+		font-weight: 600;
+	}
+	#benefits-plan .benefits-box p {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+		padding-left: 20px;
+		padding-right: 49px;
+		margin-bottom: 0px;
+		padding-bottom: 60px;
+		}
+		#benefits-plan .benefits-box #plan::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-1.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #estate::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-2.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #medical::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-3.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #dental::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-4.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 80px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #vision::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-5.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #insurence::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-6.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #vocation::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-7.png');
+		     background-size: cover;
+		     width: 81px; 
+		     height: 73px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #holiday::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-8.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #awards::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-9.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #money::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-10.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+
+
+#drive_page #perks {
+	background-color: #f7f9fc;
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+	#perks .h2-perks-plan {
+	  font-size: 30px;
+	  font-family: "Montserrat";
+	  color: #171717;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  line-height: 1.333;
+	  padding: 4px;
+	  margin: 0px;
+	  padding-bottom: 85px;
+	}
+	#perks .perks-box-text {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+	}
+	#perks .perks-box-text {
+		font-weight: 600;
+	}
+	#perks .perks-box p {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+		padding-left: 20px;
+		padding-right: 49px;
+		margin-bottom: 0px;
+		padding-bottom: 60px;
+	}
+		#perks .perks-box #perk-1::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-1.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-2::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-2.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-3::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-3.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-4::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-4.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-5::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-5.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 79px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-6::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-6.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-7::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-7.png');
+		     background-size: cover;
+		     width: 80px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+
+#drive_page #join-community {
+	background-color: #fff;
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+	#join-community h2 {
+		font-size: 30px;
+		font-family: "Montserrat";
+		color: #171717;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.333;
+		padding-top: 50px;
+		margin: 0px;
+		padding-bottom: 50px;
+	}
+	#join-community img {}
+	#join-community .community-text {}
+	#join-community .community-text p.community-text-1 {
+		font-size: 20px;
+		font-family: "Roboto";
+		color: #171717;
+		line-height: 2.4;
+		margin-bottom: 25px;
+	}
+	#join-community .community-text p.community-text-2 {
+		font-size: 22px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 1.636;
+		margin-bottom: 25px;
+	}
+	#join-community .community-text p.community-text-3 {
+		font-size: 16px;
+		color: #171717;
+		line-height: 1.625;
+	}
+#drive_page #what-people-saying {
+	background-color: #fff;
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+	#what-people-saying h2.h2-what-people-saying {
+		font-size: 30px;
+		color: #171717;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.333;
+		margin: 0px;
+		padding-bottom: 50px;
+		color: #171717 
+	}
+	#what-people-saying .nav-pills {
+		margin-bottom: 60px!important;
+	}
+	#what-people-saying .nav-pills li a {
+		background-color: transparent;
+		border-radius: 0px;
+		padding: 0px;
+		margin-right: 12px;
+		margin-bottom: 5px;
+	}
+	#what-people-saying .what-people-saying-text-block {
+		padding-top: 3%;
+	}
+	#what-people-saying .nav-pills li a.active {
+		border: 0px solid transparent;
+		background-color: transparent;
+		border-bottom: 2px solid red;
+		border-radius: 0px;
+		padding: 0px;
+		margin-right: 12px;
+		margin-bottom: 5px;
+	}
+	#what-people-saying .nav-pills li a:active {
+		border: 0px solid transparent;
+		background-color: transparent;
+		border-bottom: 2px solid red;
+	}
+	#what-people-saying .what-people-saying-text-block p.what-people-saying-text-1 {
+		font-size: 20px;
+		color: #585858;
+		line-height: 1.6;
+		margin-bottom: 50px;
+	}
+	#what-people-saying .what-people-saying-text-block p.what-people-saying-text-2 {
+		font-size: 20px;
+		color: #171717;
+		font-weight: 500;
+		line-height: 1.6;
+	}
+	#what-people-saying .what-people-saying-text-block p.what-people-saying-text-3 {
+		font-size: 16px;
+		color: #585858;
+		line-height: 2;
+		margin-bottom: 22px;
+	}
+
+
+
+#need-to-know {
+	background-color: #3a3a3c;
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+	#need-to-know h2 {
+			font-size: 30px;
+			color: #171717;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.333;
+			margin: 0px;
+			padding-bottom: 50px;
+			color: #fff; 
+	}
+	#need-to-know p.need-to-know-text {
+		color: #fff;
+		font-size: 16px;
+		line-height: 1.625;
+		text-align: center;
+	}
+
+
+#drive_page #form-block {
+	background-color: #fff;
+	padding-top: 76px;
+	padding-bottom: 70px;
+}
+	#form-block h2 {
+		margin: 0px;
+		font-size: 30px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 0.867;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	#form-block form label {
+		font-size: 18px;
+		color: #171717;
+		font-weight: 500;
+		line-height: 1.444;
+		padding-bottom: 15px;
+	}
+	#form-block form select {
+		margin-bottom: 20px;
+		padding: 2.5px .75rem;
+	}
+	#form-block form button {
+		margin-top: 34px;
+
+		padding: 22px 30px;
+	}
+		#form-block form button:hover, #form-block form button:focus {
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		}
+	#form-block .under-form-text {
+		font-size: 16px;
+		line-height: 1.625;
+		text-align: center;
+		color: #000;
+		font-weight: 500;
+		margin-top: 50px;
+	}
+	#form-block .right-side-income p {
+		font-size: 18px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 1.444;
+	}
+	#form-block .right-side-income button {
+		background-color: #3e3e3e;
+		border: 1px solid #3e3e3e;
+		color: #ffffff;
+		padding-top: 18px;
+		padding-bottom: 18px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.3;
+		width: 100%;
+	}
+		#form-block .right-side-income button:hover, #form-block .right-side-income button:focus {
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color: #fff;
+		border: 1px solid #3e3e3e
+		}
+	#form-block .right-side-income .w-100 {
+		margin-bottom: 30px;
+	}
+	#form-block .form-group #form-text-1::before {
+		content: "trailer";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+	#form-block .form-group #form-text-2::before {
+		content: "miles";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#form-block .form-group #form-text-3::before {
+		content: "years";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+#form-block .form-group #form-text-4::before {
+		content: "violations";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+#drive_page #different {
+	background-color: #f7f9fc;
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+	#different h2 {
+		font-size: 30px;
+		color: #171717;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.333;
+		margin: 0px;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	#different .different-text {
+		color: #585858;
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+		font-weight: 500;
+		margin-bottom: 80px;
+	}
+	#different a.btn {
+		font-size: 26px;
+		color: #585858;
+		font-weight: 500;
+		line-height: 1.154;
+		text-align: left;
+		border: none;
+		background-color: #f7f9fc;
+	}
+		#different a.btn:focus{
+				border: 1px solid #f7911e!important;
+				box-shadow: none;
+		}
+	#different .card.card-body {
+		background-color: #f7f9fc;
+		border: none;
+	}
+	#different .card.card-body p.body-text {
+		font-size: 16px;
+		color: #585858;
+		line-height: 1.813;
+		font-weight: 400;
+		margin-bottom: 35px;
+	}
+
+
+#drive_page #bonus {
+	background-color: #fff;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+	#bonus .bonus-text {
+		font-size: 30px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 1.6;
+		margin-bottom: 30px;
+	}
+	#bonus ul {
+		padding-left: 18px;
+	}
+	#bonus ul li {
+		font-size: 18px;
+		color: #585858;
+		line-height: 3.889;
+		margin-bottom: 20px;
+		font-weight: 500;
+	}
+	#bonus .bonus-button {
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #f7911e;
+		border-color: #f7911e;
+		padding: 22px 30px;
+		font-size: 16px;
+	  	font-weight: bold;
+		text-transform: uppercase;
+	}
+	#bonus .bonus-button:hover,#bonus .bonus-button:focus{
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color: transparent;
+		border-color:  #f7911e;
+		color: #585858!important;
+	}
+
+#drive_page .carousel .carousel-caption {
+ 	top: 30%;
+}
+
+#drive_page h1 {
+	font-size: 38px;
+	font-weight: 600px!important;
+  	line-height: 1.447;
+  	padding-bottom: 0px;
+  	margin-bottom: 0px;
+}
+
+ #h1-bottom-about {
+  font-size: 22px;
+  font-weight: 600px
+  line-height: 1.455;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  margin-top: 0px;
+  padding-bottom: 30px;
+  margin-bottom: 0px;
+}
+
+#drive_page .drive-page-button {
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #f7911e;
+	border-color: #f7911e;
+	padding: 22px 30px;
+	font-size: 16px;
+  	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#drive_page .drive-page-button:hover,#drive_page .drive-page-button:focus{
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+	background-color: transparent;
+	border-color:  #f7911e;
+	color: #fff!important;
+}
+
+#benefits {
+	background-color: #fff;
+	border: 1px solid #9c9c9c;
+	text-align: center;
+}
+
+#benefits p.benefit-text {
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 300px;
+	color: #171717;
+	line-height: 2.4;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#benefits .col-lg-4 {
+	border-right: 1px solid #9c9c9c;
+}
+
+#benefits .col-lg-4:nth-child(3) {
+	border-right: 0px solid transparent;	
+}
+
+#benefits #ben_1::before {
+     content: ""; 
+     background-image: url('../img/drive/benefits1.png');
+     background-size: cover;
+     width: 55px; 
+     height: 37px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 5px;
+}
+
+#benefits #ben_2::before {
+     content: ""; 
+     background-image: url('../img/drive/benefits2.png');
+     background-size: cover;
+     width: 53px; 
+     height: 44px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 5px;
+}
+
+#benefits #ben_3::before {
+     content: ""; 
+     background-image: url('../img/drive/benefits3.png');
+     background-size: cover;
+     width: 55px; 
+     height: 52px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 5px;
+}
+
+#drive_page #driver-type {
+	padding-top: 85px;
+	padding-bottom: 90px;
+}
+
+.h2-drive {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #171717;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  padding: 4px;
+  margin: 0px;
+}
+
+#drive_page #driver-type button:hover {
+	color: #585858!important;
+}
+
+#drive_page #driver-type .card {
+	margin-bottom: 60px;
+	margin-top: 60px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	border: 0px solid #cfcfcf;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+	#drive_page #driver-type .card img {
+		width: 100px;
+	}
+	#drive_page #driver-type .card-text {
+	  font-size: 20px;
+	  font-family: "Montserrat";
+	  color: #585858;
+	  line-height: 2;
+	}
+
+#drive_page #solution {
+	background-color: #fcfbfb;
+	padding-top: 70px;
+	padding-bottom: 90px;
+}
+	#drive_page #solution .card img {
+		width: 117px;
+	}
+	#drive_page #solution button:hover {
+		color: #585858!important;
+	}
+	#drive_page #solution .card {
+		background-color: #fcfbfb;
+		margin-bottom: 115px;
+		margin-top: 115px;
+		padding-bottom: 0px;
+		padding-top: 0px;
+		border: 0px solid #cfcfcf;
+		padding-left: 0px;
+		padding-right: 0px;
+    }
+    #drive_page #solution .card-title{
+	  font-size: 20px;
+	  font-family: "Roboto";
+	  color: #585858;
+	  text-transform: uppercase;
+	  line-height: 1.8;
+	}
+	#drive_page #solution .card-text {
+	  font-size: 18px;
+	  font-family: "Montserrat";
+	  color: #171717;
+	  font-weight: bold;
+	  line-height: 1.667;
+	  text-align: center;
+	}
+	#drive_page #solution p.bottom-number {
+	  font-size: 14px;
+	  font-family: "Roboto";
+	  color: #575757;
+	  line-height: 5.143;
+	  padding-bottom: 15px;
+	  margin-bottom: 0px;
+	  padding-bottom: 0px;
+	}
+
+#drive_page #testimonials {
+
+}
+	#drive_page #testimonials .container-fluid {
+		padding-left: 0px;
+		padding-right: 0px
+	}
+	#drive_page #testimonials .container-fluid .row {
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+	#drive_page #testimonials .container-fluid .row .carousel-item {
+		padding-left: 0px;
+		padding-right: 0px
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-main-text {
+		padding: 0px;
+		margin: 0px;
+		font-size: 28px;
+		color: #fff;
+		font-weight: 600;
+		line-height: 1.714;
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img#play-btn {
+		width: 70px;
+		padding: 0px;
+		margin: 0px;
+		margin-bottom: 25px;
+		margin-top: 64px;
+	}
+		#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img.play-btn:hover {
+			transition: 0.2s ease-in;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			background-color: transparent;
+			opacity: 0.8;
+		}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-play-text {
+		padding: 0px;
+		margin: 0px;
+		font-size: 16px;
+		font-family: "Roboto";
+		color: #fff;
+		line-height: 3;
+	}
+#drive_page #testimonials-2 {
+	border: 1px solid #9c9c9c;
+	border-top: none;
+}
+	#drive_page #testimonials-2 .col-lg-4 {
+	    border-right: 1px solid #9c9c9c;
+	    padding-top: 18px;
+	    padding-bottom: 45px;
+	}
+	#drive_page #testimonials-2 img {}
+	#drive_page #testimonials-2 p.author-text {
+	  font-size: 14px;
+	  color: #585858;
+	  line-height: 2.143;
+	  font-weight: 500;
+	  margin-bottom: 0px;
+	  padding-top: 18px;
+	  padding-bottom: 45px;
+	}
+	#drive_page #testimonials-2 p.author {
+	  font-size: 18px;
+	  color: #171717;
+	  font-weight: 600;
+	  line-height: 1.667;
+	  margin-bottom: 0px;
+	}
+
+#drive_page #carouselExampleIndicators .carousel-inner .carousel-item {
+ 	min-height: 1024px;
+}
+	#drive_page #carouselExampleIndicators a.carousel-control-prev, #drive_page #carouselExampleIndicators a.carousel-control-next {
+		width: 10%;
+	}
+
+#drive_page #carouselExampleIndicators a.carousel-control-prev span.carousel-control-prev-icon, #drive_page #carouselExampleIndicators a.carousel-control-next span.carousel-control-next-icon {
+	background-color: #f7911d;
+	width: 50px;
+	height: 50px;
+}
+
+#drive_page #carouselExampleIndicators ol.carousel-indicators li {
+	background-color: #f7911d;
+}
+
+#drive_page #benefits-plan {
+	background-color: #f7f9fc;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+	#benefits-plan h2.h2-benefits-plan {
+	  font-size: 30px;
+	  font-family: "Montserrat";
+	  color: #171717;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  line-height: 1.333;
+	  padding: 4px;
+	  margin: 0px;
+	  padding-bottom: 85px;
+	}
+	#benefits-plan .benefits-box-text {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+	}
+	#benefits-plan .benefits-box-text {
+		font-weight: 600;
+	}
+	#benefits-plan .benefits-box p {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+		padding-left: 20px;
+		padding-right: 49px;
+		margin-bottom: 0px;
+		padding-bottom: 60px;
+		}
+		#benefits-plan .benefits-box #plan::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-1.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #estate::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-2.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #medical::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-3.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #dental::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-4.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 80px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #vision::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-5.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #insurence::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-6.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #vocation::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-7.png');
+		     background-size: cover;
+		     width: 81px; 
+		     height: 73px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #holiday::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-8.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #awards::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-9.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#benefits-plan .benefits-box #money::before {
+		     content: ""; 
+		     background-image: url('../img/drive/benefits-10.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+
+
+#drive_page #perks {
+	background-color: #f7f9fc;
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+
+#drive_page #carouselExampleIndicators .carousel-item.perks {
+	background-color: #f7f9fc;
+}
+	#perks .h2-perks-plan {
+	  font-size: 30px;
+	  font-family: "Montserrat";
+	  color: #171717;
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  line-height: 1.333;
+	  padding: 4px;
+	  margin: 0px;
+	  padding-bottom: 85px;
+	}
+	#perks .perks-box-text {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+	}
+	#perks .perks-box-text {
+		font-weight: 600;
+	}
+	#perks .perks-box p {
+		font-size: 16px;
+		color: #000;
+		line-height: 1.625;
+		padding-left: 20px;
+		padding-right: 49px;
+		margin-bottom: 0px;
+		padding-bottom: 60px;
+	}
+		#perks .perks-box #perk-1::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-1.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-2::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-2.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-3::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-3.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-4::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-4.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-5::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-5.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 79px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-6::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-6.png');
+		     background-size: cover;
+		     width: 71px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+		#perks .perks-box #perk-7::before {
+		     content: ""; 
+		     background-image: url('../img/drive/perk-7.png');
+		     background-size: cover;
+		     width: 80px; 
+		     height: 71px; 
+		     background-repeat: no-repeat; 
+		     margin-left: -77px;
+		     margin-top: 0px; 
+		     position: absolute;
+			 margin-top: 6px;
+		}
+
+#drive_page #join-community {
+	background-color: #fff;
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+	#join-community h2 {
+		font-size: 30px;
+		font-family: "Montserrat";
+		color: #171717;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.333;
+		padding-top: 50px;
+		margin: 0px;
+		padding-bottom: 50px;
+	}
+	#join-community img {}
+	#join-community .community-text {}
+	#join-community .community-text p.community-text-1 {
+		font-size: 20px;
+		font-family: "Roboto";
+		color: #171717;
+		line-height: 2.4;
+		margin-bottom: 25px;
+	}
+	#join-community .community-text p.community-text-2 {
+		font-size: 22px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 1.636;
+		margin-bottom: 25px;
+	}
+	#join-community .community-text p.community-text-3 {
+		font-size: 16px;
+		color: #171717;
+		line-height: 1.625;
+	}
+#drive_page #what-people-saying {
+	background-color: #fff;
+	padding-top: 35px;
+	padding-bottom: 60px;
+}
+	#what-people-saying h2.h2-what-people-saying {
+		font-size: 30px;
+		color: #171717;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.333;
+		margin: 0px;
+		padding-bottom: 50px;
+		color: #171717 
+	}
+	#what-people-saying .nav-pills {
+		margin-bottom: 60px!important;
+	}
+	#what-people-saying .nav-pills li a {
+		background-color: transparent;
+		border-radius: 0px;
+		padding: 0px;
+		margin-right: 12px;
+		margin-bottom: 5px;
+	}
+	#what-people-saying .what-people-saying-text-block {
+		padding-top: 3%;
+	}
+	#what-people-saying .nav-pills li a.active {
+		border: 0px solid transparent;
+		background-color: transparent;
+		border-bottom: 2px solid red;
+		border-radius: 0px;
+		padding: 0px;
+		margin-right: 12px;
+		margin-bottom: 5px;
+	}
+	#what-people-saying .nav-pills li a:active {
+		border: 0px solid transparent;
+		background-color: transparent;
+		border-bottom: 2px solid red;
+	}
+	#what-people-saying .what-people-saying-text-block p.what-people-saying-text-1 {
+		font-size: 20px;
+		color: #585858;
+		line-height: 1.6;
+		margin-bottom: 50px;
+	}
+	#what-people-saying .what-people-saying-text-block p.what-people-saying-text-2 {
+		font-size: 20px;
+		color: #171717;
+		font-weight: 500;
+		line-height: 1.6;
+	}
+	#what-people-saying .what-people-saying-text-block p.what-people-saying-text-3 {
+		font-size: 16px;
+		color: #585858;
+		line-height: 2;
+		margin-bottom: 22px;
+	}
+
+#need-to-know {
+	background-color: #3a3a3c;
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+	#need-to-know h2 {
+			font-size: 30px;
+			color: #171717;
+			font-weight: bold;
+			text-transform: uppercase;
+			line-height: 1.333;
+			margin: 0px;
+			padding-bottom: 50px;
+			color: #fff; 
+	}
+	#need-to-know p.need-to-know-text {
+		color: #fff;
+		font-size: 16px;
+		line-height: 1.625;
+		text-align: center;
+	}
+
+
+#drive_page #form-block {
+	background-color: #fff;
+	padding-top: 76px;
+	padding-bottom: 70px;
+}
+	#form-block h2 {
+		margin: 0px;
+		font-size: 30px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 0.867;
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	#form-block form label {
+		font-size: 18px;
+		color: #171717;
+		font-weight: 500;
+		line-height: 1.444;
+		padding-bottom: 15px;
+	}
+	#form-block form select {
+		margin-bottom: 20px;
+		padding: 2.5px .75rem;
+	}
+	#form-block form button {
+		margin-top: 34px;
+
+		padding: 22px 30px;
+	}
+		#form-block form button:hover, #form-block form button:focus {
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		}
+	#form-block .under-form-text {
+		font-size: 16px;
+		line-height: 1.625;
+		text-align: center;
+		color: #000;
+		font-weight: 500;
+		margin-top: 50px;
+	}
+	#form-block .right-side-income p {
+		font-size: 18px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 1.444;
+	}
+	#form-block .right-side-income button {
+		background-color: #3e3e3e;
+		border: 1px solid #3e3e3e;
+		color: #ffffff;
+		padding-top: 18px;
+		padding-bottom: 18px;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.3;
+		width: 100%;
+	}
+		#form-block .right-side-income button:hover, #form-block .right-side-income button:focus {
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color: #fff;
+		border: 1px solid #3e3e3e
+		}
+	#form-block .right-side-income .w-100 {
+		margin-bottom: 30px;
+	}
+	#form-block .form-group #form-text-1::before {
+		content: "trailer";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+	#form-block .form-group #form-text-2::before {
+		content: "miles";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#form-block .form-group #form-text-3::before {
+		content: "years";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#form-block .form-group #form-text-4::before {
+		content: "violations";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#form-block .form-group #form-text-6::before {
+		content: "heavy";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#form-block .form-group #form-text-7::before {
+		content: "trucks";
+		background-size: cover;
+		margin-left: 76px;
+		margin-top: 0px;
+		position: absolute;
+		margin-top: -10px;
+		display: inline-block;
+		background-color: white;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+#drive_page #different {
+	background-color: #f7f9fc;
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+	#different h2 {
+		font-size: 30px;
+		color: #171717;
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1.333;
+		margin: 0px;
+		padding-bottom: 50px;
+		text-align: center;
+	}
+	#different .different-text {
+		color: #585858;
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+		font-weight: 500;
+		margin-bottom: 80px;
+	}
+	#different a.btn {
+		font-size: 26px;
+		color: #585858;
+		font-weight: 500;
+		line-height: 1.154;
+		text-align: left;
+		border: none;
+		background-color: #f7f9fc;
+	}
+		#different a.btn:focus{
+				border: 1px solid #f7911e!important;
+				box-shadow: none;
+		}
+	#different .card.card-body {
+		background-color: #f7f9fc;
+		border: none;
+	}
+	#different .card.card-body p.body-text {
+		font-size: 16px;
+		color: #585858;
+		line-height: 1.813;
+		font-weight: 400;
+		margin-bottom: 35px;
+	}
+
+
+#drive_page #bonus {
+	background-color: #fff;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+	#bonus .bonus-text {
+		font-size: 30px;
+		color: #171717;
+		font-weight: 600;
+		line-height: 1.6;
+		margin-bottom: 30px;
+	}
+	#bonus ul {
+		padding-left: 18px;
+	}
+	#bonus ul li {
+		font-size: 18px;
+		color: #585858;
+		line-height: 3.889;
+		margin-bottom: 20px;
+		font-weight: 500;
+	}
+	#bonus .bonus-button {
+		text-transform: uppercase;
+		color: #fff;
+		background-color: #f7911e;
+		border-color: #f7911e;
+		padding: 22px 30px;
+		font-size: 16px;
+	  	font-weight: bold;
+		text-transform: uppercase;
+	}
+	#bonus .bonus-button:hover,#bonus .bonus-button:focus{
+		transition: 0.2s ease-in;
+		-webkit-transition: 0.2s ease-in;
+		-moz-transition: 0.2s ease-in;
+		background-color: transparent;
+		border-color:  #f7911e;
+		color: #585858!important;
+	}
+/* ========== END DRIVE COMPANY Page Style ========== */
+
+
+/* ========== DISPATCHING Style ========== */
+#perks .perks-box #perks-1::before {
+     content: ""; 
+     background-image: url('../img/dispatching/perk-1.png');
+     background-size: cover;
+     width: 71px; 
+     height: 71px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 6px;
+}
+#perks .perks-box #perks-2::before {
+     content: ""; 
+     background-image: url('../img/dispatching/perk-2.png');
+     background-size: cover;
+     width: 71px; 
+     height: 71px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 6px;
+}
+#perks .perks-box #perks-3::before {
+     content: ""; 
+     background-image: url('../img/dispatching/perk-3.png');
+     background-size: cover;
+     width: 71px; 
+     height: 71px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 6px;
+}
+#perks .perks-box #perks-4::before {
+     content: ""; 
+     background-image: url('../img/dispatching/perk-4.png');
+     background-size: cover;
+     width: 71px; 
+     height: 71px; 
+     background-repeat: no-repeat; 
+     margin-left: -77px;
+     margin-top: 0px; 
+     position: absolute;
+	 margin-top: 6px;
+}
+
+#carouselExampleIndicators #carousel-inner-disp .carousel-item {
+    min-height: 780px!important;
+}
+/* ========== END DISPATCHING ========== */
+
+
+/* ========== OWNER OPERATORS ========== */
+#carouselExampleIndicators #carousel-inner-operator .carousel-item {
+    min-height: 780px!important;
+}
+/* ========== END OWNER OPERATORS  ========== */
+
+
+/* ========== SHIP Page Style ========== */
+#drive_page #lets_talk {
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #f7911e;
+}
+	#drive_page #lets_talk h2 {
+		padding: 0px;
+		margin: 0px;
+		margin-top: 10px;
+		color: #fff;
+		font-size: 30px;
+		font-weight: 600;
+	}
+	#drive_page #lets_talk  button {
+		margin: 0px;
+		text-transform: uppercase;
+	    color: black;
+	    background-color: #fff;
+	    border-color: #fff;
+	    padding: 18px 48px;
+	    font-size: 14px;
+	    font-weight: 500;
+		font-size: 18px;
+		font-weight: 600;
+	}
+		#drive_page #lets_talk button:focus, #drive_page #lets_talk button:hover, #drive_page #lets_talk button:active {
+			color: black!important;
+			opacity: 0.8;
+		}
+#drive_page.ship #carouselExampleIndicators .carousel-inner .carousel-item {
+    min-height: 800px;
+}
+#drive_page.ship #perks.add-perks #perk-1:before {
+	content: "";
+    background-image: url(../img/ship/add-ben-1.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #perks.add-perks #perk-2:before {
+	content: "";
+    background-image: url(../img/ship/add-ben-2.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #perks.add-perks #perk-3:before {
+	content: "";
+    background-image: url(../img/ship/add-ben-3.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #perks.add-perks #perk-4:before {
+	content: "";
+    background-image: url(../img/ship/add-ben-4.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #perks.add-perks #perk-5:before {
+	content: "";
+    background-image: url(../img/ship/add-ben-5.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #perks.add-perks #perk-6:before {
+	content: "";
+    background-image: url(../img/ship/add-ben-6.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #perks.add-perks #perk-7:before {
+	content: "";
+    background-image: url(../img/ship/add-ben-7.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #benefits-plan.st-serv #plan:before {
+	content: "";
+    background-image: url(../img/ship/st-serv-1.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #benefits-plan.st-serv #estate:before {
+	content: "";
+    background-image: url(../img/ship/st-serv-2.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #benefits-plan.st-serv #medical:before {
+	content: "";
+    background-image: url(../img/ship/st-serv-3.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #benefits-plan.st-serv #dental:before {
+	content: "";
+    background-image: url(../img/ship/st-serv-4.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #benefits-plan.st-serv #vision:before {
+	content: "";
+    background-image: url(../img/ship/st-serv-5.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+#drive_page.ship #benefits-plan.st-serv #insurence:before {
+	content: "";
+    background-image: url(../img/ship/st-serv-6.png);
+    background-size: cover;
+    width: 72px;
+    height: 72px;
+    background-repeat: no-repeat;
+    margin-left: -77px;
+    margin-top: 0px;
+    position: absolute;
+    margin-top: 6px;
+}
+/* ========== SHIP Page Style ========== */
+
+
+/* ========== CAREERS  ========== */
+
+.careers #main-page-head {
+	margin-bottom: 60px;
+}
+#carouselExampleIndicators #carousel-inner-careers .carousel-item {
+    min-height: 780px!important;
+}
+#drive_page #form-map-block {
+	padding-top: 60px;
+}
+#drive_page #form-map-block h2 {
+	text-transform: none;
+	padding-bottom: 30px;
+}
+#drive_page #form-map-block form p {
+	font-weight: 600;
+	font-size: 24px;
+	color: black;
+	line-height: 1.083;
+	padding-bottom: 20px;
+}
+#drive_page #form-map-block input {
+	height: 55px;
+}
+#drive_page #form-map-block form label {
+  font-size: 18px;
+  color: #171717;
+  font-weight: 600;
+  line-height: 1.444;
+  padding-bottom: 10px;
+}
+#drive_page #form-map-block form select {
+    padding: 25px;
+    margin-bottom: 20px;
+}
+#drive_page #form-map-block form button {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.083;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+/* ========== END CAREERS ========== */
+
+
+/* ========== SEARCH RESULTS ========== */
+#drive_page #search_page {
+	background-color: #fff;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+#drive_page #search_page #search_results button {
+	margin-bottom: 20px;
+	margin-top: 35px;
+}
+#drive_page #search_page #search_results button,
+#drive_page #search_page form#sign-in-form button {
+	width: 70%;
+	border-radius: 0px;
+	font-size: 18px;
+	font-weight: 600;
+}
+#drive_page #search_page form#search_results {
+	padding-bottom: 35px;
+}
+#drive_page #search_page form#search_results p.block-title{
+  font-size: 20px;
+  color: #3a3a3c;
+  line-height: 1.3;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#drive_page #search_page form#search_results label {
+  font-size: 16px;
+  color: #3a3a3c;
+  line-height: 1.3;
+  font-weight: 500;
+}
+#drive_page #search_page form#search_results select, #drive_page #search_page form#search_results input {
+  font-size: 13px;
+  color: #3a3a3c;
+  line-height: 1.3;
+  font-weight: 500;
+  height: 45px;
+}
+#drive_page #search_page form#search_results p a.underform-text {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #f7911d;
+  line-height: 1.625;	
+  font-weight: 500;
+}
+#drive_page #search_page form#search_results {
+	border-bottom: 1px solid #c9c9c9;
+}
+#drive_page #search_page form#sign-in-form {
+	border-bottom: 1px solid #c9c9c9;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#drive_page #search_page form#sign-in-form p {
+  font-size: 18px;
+  color: rgb(58, 58, 60);
+  line-height: 1.444;
+  font-weight: 500;
+}
+#drive_page #search_page form#sign-in-form label {
+  font-size: 16px;
+  color: #3a3a3c;
+  line-height: 1.3;
+  font-weight: 500;
+}
+#drive_page #search_page form#sign-in-form select {
+  font-size: 13px;
+  color: #3a3a3c;
+  line-height: 1.3;
+  font-weight: 500;
+  height: 45px;
+  margin-bottom: 40px;
+}
+#drive_page #search_page nav#page-nav-bottom ul {
+	float: right;
+}
+#drive_page #search_page p.assist-text {
+  font-size: 18px;
+  color: rgb(58, 58, 60);
+  line-height: 1.444;
+  font-weight: 500;
+  padding-bottom: 25px;
+  padding-top: 35px;
+}
+#drive_page #search_page p.under-assist-text {
+  font-size: 14px;
+  color: rgb(58, 58, 60);
+  line-height: 1.857;
+  font-weight: 300;
+}
+#drive_page #search_page #content h2 {
+  font-size: 30px;
+  color: #3a3a3c;
+  line-height: 0.867;
+  font-weight: 500;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+}
+#drive_page #search_page #content .pills-block {
+	border-top: 1px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+#drive_page #search_page #content .pills-block  ul li a {
+	margin-right: 30px;
+	margin-bottom: 10px;
+	min-width: 170px;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+}
+#drive_page #search_page #content ul li a.sort-by {
+	background-color: #fff;
+	color: rgb(58, 58, 60);
+	border: 1px solid #fff;
+	min-width: 70px;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 14px;
+}
+#drive_page #search_page #content ul li a#sort_brand, #drive_page #search_page #content ul li a#sort_location {
+	background-color: #fff;
+	color: #3a3a3c;
+	border: 1px solid #d0d0d0;
+}
+#drive_page #search_page #serch_results-main ol li, #drive_page #search_page #serch_results-main ul li {
+	list-style-type: none;
+}
+#drive_page #search_page #serch_results-main ol {
+	padding-left: 0px!important;
+}
+#drive_page #search_page #serch_results-main ol li ul {
+	padding-left: 15px!important
+}
+#drive_page #search_page #serch_results-main ol > li{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #c9c9c9;
+}
+#drive_page #search_page #serch_results-main .jobTitle a {
+  font-size: 18px;
+  color: rgb(247, 145, 29);
+  line-height: 1.444;
+  font-weight: 500;
+  padding-bottom: 15px; 
+}
+#drive_page #search_page #serch_results-main .brand {
+  font-size: 16px;
+  color: rgb(58, 58, 60);
+  line-height: 1.625;
+  font-weight: 300;
+}
+#drive_page #search_page #serch_results-main .city_state_country {
+  font-size: 16px;
+  color: rgb(58, 58, 60);
+  line-height: 1.625;
+  font-weight: 300;
+}
+#drive_page #search_page #serch_results-main #page-nav-bottom li.active a {
+	background-color: #f7911d!important;
+    border-color: #f7911d!important;
+}
+.page-link {
+    color: rgb(58, 58, 60);
+}
+/* ========== END SEARCH RESULTS ========== */
+
+/* ========== JOB TITLE========== */
+#job-title-page .content-jt {
+	padding-top: 90px;
+	padding-bottom: 100px;
+}
+#job-title-page .content-jt h1 {
+  font-size: 28px;
+  font-family: "Montserrat";
+  color: #171717;
+  font-weight: 600;
+  line-height: 1.429;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
+}
+#job-title-page .content-jt .under-h1-text {
+	margin-bottom: 0px;
+	padding-bottom: 45px;
+}
+#job-title-page .content-jt iframe.truck-video {
+	padding-bottom: 50px;
+}
+#job-title-page .content-jt .job-description, #job-title-page .content-jt .company-description, #job-title-page .content-jt .characteristics, #job-title-page .content-jt .company-description, #job-title-page .content-jt .qualifications, #job-title-page .content-jt .tech-programs, #job-title-page .content-jt .summary {
+	margin-bottom: 60px;
+}
+#job-title-page .content-jt h2 {
+  font-size: 18px;
+  color: #3a3a3c;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 2;
+  margin-bottom: 0px;
+  padding-bottom: 33px; 
+}
+#job-title-page .content-jt p.description-text {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #585858;
+  line-height: 2.25;
+  font-weight: 500;
+  margin-bottom: 53px;
+}
+#job-title-page .content-jt ul.main-li {
+	padding-left: 20px;
+}
+#job-title-page .content-jt ul.main-li li {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #585858;
+  line-height: 2.25;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#job-title-page .content-jt ul#social_navs {
+	list-style: none;
+	padding-left: 0px;
+	padding: 15%;
+	padding-right: 20%;
+}
+#job-title-page .content-jt #social_navs li a {
+	text-decoration: none;
+	display: block;
+    font-size: 20px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+    font-weight: 400;
+    background-color: #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 61px;
+	margin-right: 10px;
+	margin-bottom: 7px;
+	border-radius: 37px;
+}
+#job-title-page .content-jt button.apply-job {
+	color: #fff;
+    background-color: #f7911e;
+    border-color: #f7911e;
+    padding: 22px 30px;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 50%;
+    margin-bottom: 10px;
+}
+	#job-title-page .content-jt button.apply-job:hover, #job-title-page .content-jt button.apply-job:focus {
+    color: #585858!important;
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    -moz-transition: 0.2s ease-in;
+    background-color: transparent;
+    border-color: #f7911e;
+}
+#job-title-page .content-jt .video-block iframe {
+	margin: 0px;
+}
+#job-title-page .content-jt .video-block p {
+	display: block;
+	background-color: #242424;
+	color: #fff;
+	font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.625;
+    margin: 0px;
+    padding: 12px;
+    margin-top: -7px;
+}
+#job-title-page .content-jt #social_navs li #soc_facebook:before {
+	content: "";
+    background-image: url(../img/job/facebook.png);
+    background-size: cover;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+    margin-left: -55px;
+    margin-top: -4px;
+    position: absolute;
+}
+	#job-title-page .content-jt #social_navs li #soc_facebook:after {
+		content: "";
+	    background-image: url(../img/job/play.png);
+	    background-size: cover;
+	    width: 12px;
+	    height: 20px;
+	    background-repeat: no-repeat;
+		margin-left: 22px;
+	    margin-top: 8px;
+	    position: absolute;
+	}
+#job-title-page .content-jt #social_navs li #soc_youtube:before {
+	content: "";
+    background-image: url(../img/job/youtube.png);
+    background-size: cover;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+    margin-left: -55px;
+    margin-top: -4px;
+    position: absolute;
+}
+	#job-title-page .content-jt #social_navs li #soc_youtube:after {
+		content: "";
+	    background-image: url(../img/job/play.png);
+	    background-size: cover;
+	    width: 12px;
+	    height: 20px;
+	    background-repeat: no-repeat;
+		margin-left: 36px;
+	    margin-top: 8px;
+	    position: absolute;
+	}
+#job-title-page .content-jt #social_navs li #soc_twitter:before {
+	content: "";
+    background-image: url(../img/job/twitter.png);
+    background-size: cover;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+    margin-left: -55px;
+    margin-top: -4px;
+    position: absolute;
+}
+	#job-title-page .content-jt #social_navs li #soc_twitter:after {
+		content: "";
+	    background-image: url(../img/job/play.png);
+	    background-size: cover;
+	    width: 12px;
+	    height: 20px;
+	    background-repeat: no-repeat;
+		margin-left: 46px;
+	    margin-top: 8px;
+	    position: absolute;
+	}
+#job-title-page .content-jt #social_navs li #soc_instagram:before {
+	content: "";
+    background-image: url(../img/job/instagram.png);
+    background-size: cover;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+    margin-left: -55px;
+    margin-top: -4px;
+    position: absolute;
+}
+	#job-title-page .content-jt #social_navs li #soc_instagram:after {
+		content: "";
+	    background-image: url(../img/job/play.png);
+	    background-size: cover;
+	    width: 12px;
+	    height: 20px;
+	    background-repeat: no-repeat;
+		margin-left: 17px;
+	    margin-top: 8px;
+	    position: absolute;
+	}
+#job-title-page .content-jt #social_navs li #soc_itunes:before {
+	content: "";
+    background-image: url(../img/job/itunes.png);
+    background-size: cover;
+    width: 43px;
+    height: 43px;
+    background-repeat: no-repeat;
+    margin-left: -55px;
+    margin-top: -4px;
+    position: absolute;
+}
+	#job-title-page .content-jt #social_navs li #soc_itunes:after {
+		content: "";
+	    background-image: url(../img/job/play.png);
+	    background-size: cover;
+	    width: 12px;
+	    height: 20px;
+	    background-repeat: no-repeat;
+		margin-left: 42px;
+	    margin-top: 8px;
+	    position: absolute;
+	}
+#job-title-page .content-jt .sign-up-block {
+	margin-bottom: 55px;
+	background-color: #171717;
+	text-align: center;
+	padding-bottom: 48px;
+	padding-top: 42px;
+}
+#job-title-page .content-jt .sign-up-block p {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+#job-title-page .content-jt .sign-up-block form {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#job-title-page .content-jt .sign-up-block form input {
+	height: 45px;
+}
+#job-title-page .content-jt .sign-up-block form button {
+	width: 100%;
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: #ececec;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.8;
+}
+	#job-title-page .content-jt .sign-up-block form button:hover, #job-title-page .content-jt .sign-up-block form button:focus {
+	    color: #585858!important;
+	    transition: 0.2s ease-in;
+	    -webkit-transition: 0.2s ease-in;
+	    -moz-transition: 0.2s ease-in;
+	    background-color: transparent;
+	    border-color: #f7911e;
+	    background-color: #fff;
+	}
+#job-title-page .content-jt .map-block {
+	margin-bottom: 30px;
+}
+#job-title-page .content-jt .adv-block-job {
+	background-color: #f1f1f1;
+	padding-top: 50px;
+}
+#job-title-page .content-jt .adv-block-job .d-block {
+	padding-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#job-title-page .content-jt .adv-block-job .d-block:hover {
+	opacity: 0.8;
+	transition: 0.2s ease-in;
+	-webkit-transition: 0.2s ease-in;
+	-moz-transition: 0.2s ease-in;
+}
+
+#job-title-page .top-header {
+	background-color: #3a3a3c;
+	padding-top: 30px;
+}
+#job-title-page .top-header img { display: black; width: 100%; }
+#job-title-page .top-header p {
+	color: #f7f9fc;
+	font-weight: 600;
+  	font-size: 23px;
+  	margin-bottom: 10px;
+}
+#job-title-page .top-header small {
+	color: #f7f9fc;
+	font-weight: 500;
+  	font-size: 18px;
+  	margin-bottom: 20px;
+  	display: block;
+}
+#job-title-page .top-header form input {
+	height: 55px;
+}
+#job-title-page .top-header form button {
+	width: 100%;
+	font-weight: 600;
+	font-size: 20px;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+	#job-title-page .top-header form button:hover, #job-title-page .top-header form button:focus {
+	    color: #585858!important;
+	    transition: 0.2s ease-in;
+	    -webkit-transition: 0.2s ease-in;
+	    -moz-transition: 0.2s ease-in;
+	    background-color: transparent;
+	    border-color: #f7911e;
+	    background-color: #fff;
+	}
+/* ========== end JOB TITLE  ========== */
+
+/* ========== CONTACT  ========== */
+#drive_page.contact-page .carousel .carousel-caption {
+    top: 40%;
+}
+#drive_page.contact-page #contact-form {
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+	#drive_page.contact-page #contact-form  p.contact-form-text {
+		margin-bottom: 50px;
+		font-weight: 500;
+		  font-size: 16px;
+		  font-family: "Montserrat";
+		  color: rgb(58, 58, 60);
+		  line-height: 1.625;
+	}
+	#drive_page.contact-page #contact-form form input {
+		height: 51px;
+		margin-bottom: 5px;
+		background-color: #f1f1f1;
+	}
+	#drive_page.contact-page #contact-form form textarea {
+		background-color: #f1f1f1;
+	}
+	#drive_page.contact-page #contact-form form button {
+		text-transform: uppercase;
+	    color: #fff;
+	    background-color: #f7911e;
+	    border-color: #f7911e;
+	    padding: 17px 70px;
+	    font-size: 16px;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	}
+	#drive_page.contact-page #contact-form form button:hover, #drive_page.contact-page #contact-form form button:focus {
+	    transition: 0.2s ease-in;
+	    -webkit-transition: 0.2s ease-in;
+	    -moz-transition: 0.2s ease-in;
+	    background-color: transparent;
+	    border-color: #f7911e;
+	    color: #585858!important;
+	}
+#drive_page.contact-page #contact-map {
+	padding-bottom: 60px;
+}
+#drive_page.contact-page #contact-map h2 {
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(39, 39, 39);
+  text-transform: uppercase;
+  line-height: 1.636;
+  font-weight: 600;
+  margin-bottom: 55px;
+}
+#drive_page.contact-page #contact-map .contact-text {
+	margin-bottom: 40px;
+}
+#drive_page.contact-page #contact-map .contact-map-block-title {
+	  font-size: 20px;
+	  font-family: "Montserrat";
+	  color: rgb(39, 39, 39);
+	  font-weight: 600;
+	  text-transform: uppercase;
+	  line-height: 1.8;
+	  margin-bottom: 0px;
+}
+#drive_page.contact-page #contact-map .contact-map-block-info {
+	  font-size: 14px;
+	  font-family: "Montserrat";
+	  color: rgb(58, 58, 60);
+	  line-height: 1.857;
+	  font-weight: 500;
+	  margin-bottom: 15px;
+}
+
+/* ========== end CONTACT  ========== */
+
+/* ========== BLOG  ========== */
+#blog .article-content .image img.article-content-img {
+	width: 100%;
+}
+article .article-content {
+	border-bottom: 1px solid #afafaf;
+	padding-bottom: 40px;
+	padding-top: 40px;
+}
+article .article-content.top-article {
+
+	padding-bottom: 10px;
+	padding-top: 0px;
+}
+.label.podcast {
+	background-color: #3a3a3c;
+	padding: 3px 7px 5px 7px;
+}
+	.label.podcast.change-position {
+		position: relative;
+	    bottom: 80px;
+	    right: 20px;
+	}
+.label.podcast span {
+  font-size: 12px;
+  font-family: "Roboto";
+  color: #fff;
+  line-height: 3.333;
+  text-transform: uppercase;
+}
+.label.podcast span img {
+	height: 15px;
+	display: inline-block;
+}
+#blog .article-content h3 a {
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(23, 23, 23);
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin: 0px;
+}
+	#blog .article-content.top-article h3 a {
+	  font-size: 28px;
+	  font-family: "Montserrat";
+	  color: rgb(23, 23, 23);
+	  font-weight: bold;
+	  text-transform: uppercase;
+	  font-weight: 600;
+	  text-decoration: none;
+	}
+#blog .article-content h4 {
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: rgb(88, 88, 88);
+  text-transform: uppercase;
+  line-height: 1.647;
+	text-transform: uppercase;
+	font-weight: 300;
+} 
+	#blog .article-content.top-article h4 {
+		font-size: 20px;
+		font-family: "Montserrat";
+		color: rgb(88, 88, 88);
+		line-height: 2;
+		text-align: left;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+#blog .more a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "Roboto";
+	color: rgb(6, 161, 73);
+	line-height: 2;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	display: inline-block;
+}
+section.blog-form {
+	background-color: #f1f1f1;
+	padding-top: 45px;
+	padding-bottom: 30px;
+}
+section.blog-form .blog-form-title  {
+	font-weight: 600;
+	font-size: 24px;
+	font-family: "Montserrat";
+	color: rgb(23, 23, 23);
+	text-transform: uppercase;
+	line-height: 1.333;
+	padding-bottom: 24px;
+}
+	section.blog-form .blog-form-title span  {
+		font-size: 18px;
+	}
+section.blog-form input {
+	height: 53px;
+}
+section.blog-form button {
+	width: 100%;
+	height: 53px;
+}
+section#blog-posts ul {
+	padding-top: 60px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #afafaf;
+	margin-bottom: 60px!important;
+}
+section#blog-posts ul li a.nav-link, section#blog-posts ul li a.nav-link.active {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: "Montserrat";
+	color: rgb(88, 88, 88);
+	line-height: 2;
+	text-decoration: none;
+	background-color: #fff;
+	padding-right: 60px;
+} 
+	section#blog-posts ul li a.nav-link:first-child {
+		font-weight: 14px;
+	}
+section#blog-posts ul li a.nav-link img {
+	padding-right: 18px;
+}
+section#blog-posts .tab-content .card {
+	width: 100%;
+	border: 0px solid silver;
+}
+section#blog-posts .card-body {
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-top: 0px;
+	margin-bottom: 40px;
+}
+section#blog-posts .card-body h5 {
+	margin-top: -18px;
+}
+section#blog-posts .card-body h5 a {
+	font-size: 18px;
+	font-family: "Montserrat";
+	color: rgb(23, 23, 23);
+	line-height: 1.667;
+	text-align: left;
+	font-weight: 500;
+	text-decoration: none;
+}
+section#blog-posts .card-body h4 {
+	font-size: 15px;
+	font-family: "Montserrat";
+	color: rgb(88, 88, 88);
+	text-transform: uppercase;
+	line-height: 1.733;
+	font-weight: 400; 
+}
+section#blog-posts .card-body .label.podcast.change-position {
+	position: relative;
+    bottom: 50px;
+    right: 20px;
+}
+button.hiden-button {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+    padding: 18px 48px;
+    font-size: 18px;
+    font-weight: 500;
+	background-color: transparent;
+	border-color: #f7911e;
+	font-family: "Roboto";
+	color: rgb(247, 145, 30)!important;
+
+}
+	button.hiden-button:hover, button.hiden-button:focus, button.hiden-button:active {
+	    transition: 0.2s ease-in;
+	    -webkit-transition: 0.2s ease-in;
+	    -moz-transition: 0.2s ease-in;
+	    color: #fff!important;
+	    background-color: #f7911e!important;
+	    border-color: #f7911e!important;
+	}
+.horizontal-line {
+	border-bottom: 1px solid #afafaf;	
+}
+/* ========== POST PAGE  ========== */
+#post h3 {
+	margin-bottom: 0px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	font-size: 28px;
+	font-family: "Montserrat";
+	color: rgb(23, 23, 23);
+	font-weight: 600;
+	line-height: 1.429;
+	text-transform: uppercase;
+}
+#post h4 {
+	font-size: 18px;
+	font-family: "Montserrat";
+	color: rgb(88, 88, 88);
+	line-height: 2.222;
+	text-transform: uppercase;
+}
+
+#post img.article-content-img {
+	width: 100%;
+	margin-bottom: 40px;
+}
+#post blockquote {
+	background-color: #f7f9fc;
+	margin: 20px;
+	padding: 30px;
+	margin-bottom: 35px;
+}
+#post blockquote p {
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(23, 23, 23);
+  line-height: 1.778;
+  font-weight: 500;
+}
+#post .post-text p {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(88, 88, 88);
+  line-height: 1.75;
+}
+#post .banner {
+	margin: 20px;
+	background-color: #f7f9fc;
+	padding: 45px 20px 40px 20px;
+}
+#post .banner p.banner-title {
+  font-size: 23px;
+  font-family: "Montserrat";
+  color: rgb(23, 23, 23);
+  font-weight: 600;
+}
+#post .banner p.banner-text {
+  font-size: 17px;
+  font-family: "Montserrat";
+  color: rgb(88, 88, 88);
+  line-height: 1.529;
+  font-weight: 500;
+  padding-top: 33px;
+  padding-bottom: 36px;
+}
+#post .banner button.banner-bttn {
+	width: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 20px;
+	font-family: "Montserrat";
+	font-weight: 600;
+	line-height: 1.8;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#post ul.social {
+	float: right;
+	margin-bottom: 50px;
+}
+#post ul.social li a:hover {
+	opacity: 0.8;
+}
+#post ul.social li {
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 30px;
+	margin-bottom: 10px;
+}
+		#post ul.social li:last-child {
+			margin-right: 0px;
+		}
+.share-post p {
+	text-transform: uppercase;
+	padding-top: 35px;
+	font-size: 14px;
+	font-family: "Roboto";
+	color: rgb(88, 88, 88);
+	line-height: 1.857;
+	font-weight: 500;
+}
+#post .share-post ul.social {
+	float: left;
+	padding-left: 0px;
+	margin-left: 0px;
+}
+#blog-posts .individual-posts .card {
+	border: 0px solid white;
+	background-color: #f1f1f1!important;
+}
+section#blog-posts {
+	padding-top: 55px;
+    padding-bottom: 10px;
+}
+section#fb-comments {
+	padding-top: 55px;
+    padding-bottom: 55px
+}
+/* ========== end BLOG  ========== */
+
+/* ==========  Responsive Stylings ========== */
+
+@media (max-width: 991px){
+
+.navbar-nav li a.nav-link:hover, .navbar-nav .nav-item.active a.nav-link {
+	border-bottom: 2px solid transparent!important;
+	padding-top: 8px!important;
+	padding-bottom: 8px!important;
+    transition: 0.5s ease-in;
+	-webkit-transition: 0.5s ease-in;
+	-moz-transition: 0.5s ease-in;
+	opacity: 0.7;
+	}
+
+	.container{
+		width: 100%;
+	}
+
+
+	.bd-example #carouselExampleCaptions #h1-bottom-about {
+		display: none;
+	}
+
+	.bd-example #carouselExampleCaptions button {
+		padding: 10px 15px;
+    	font-size: 12px;
+	}
+
+	#main-page-head .carousel .carousel-caption {
+	 	top: 20%;
+	}
+	#main  #carouselExampleCaptions h1 {
+		font-size: 40px;
+	}
+		#main #carouselExampleCaptions h1 span.slogan {
+			font-size: 25px!important;
+		}
+
+	#dispatch button {
+		margin-bottom: 15px;
+	}
+
+	#organizations h2 {
+	    margin-bottom: 0px;
+	}
+
+	#organizations .col, #company {
+		display: none;
+	}
+
+	#benefits p.benefit-text {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	}
+	#join-community img {
+		width: 100%;
+		height: auto;
+	}
+	#bonus img {
+		width: 100%;
+		height: auto;
+	}
+
+	/* ==========  DRIVE COMPANY page ========== */
+	#drive_page .carousel .carousel-caption {
+    top: 15%;
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-main-text {
+		padding: 0px;
+		margin: 0px;
+		font-size: 16px;
+		color: #fff;
+		font-weight: 400;
+		line-height: 1.2;
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img.play-btn {
+		width: 30px;
+		padding: 0px;
+		margin: 0px;
+	}
+		#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img.play-btn:hover {
+			transition: 0.2s ease-in;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			background-color: transparent;
+			opacity: 0.8;
+		}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-play-text {
+		font-size: 15px;
+		line-height: 3;
+	}
+	#drive_page #testimonials-2 img {
+		width: 10%
+	}
+	#benefits-plan .benefits-box > div::before {
+		display: none;
+	}
+	#perks .perks-box > div::before {
+		display: none;
+	}
+	#form-block img {
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 768px){
+	.container{
+		width:100%;
+	}
+	#carouselExampleIndicators a.carousel-control-prev,	#carouselExampleIndicators a.carousel-control-next {
+		width: 5%;
+	}
+		#carouselExampleIndicators a.carousel-control-prev span.carousel-control-prev-icon,	#carouselExampleIndicators a.carousel-control-next span.carousel-control-next-icon {
+		background-color: #f7911d;
+		width: 10px;
+		height: 10px;
+		}
+
+	.hidden-tablet {
+		display: none!important;
+	}
+
+	#drive_page #search_page #content ul li a.sort-by {
+		min-width: 170px;
+	}
+	#job-title-page .content-jt ul#social_navs {
+		padding: 20%;
+		padding-right: 40%;
+	}
+}
+
+
+
+@media (max-width: 475px){
+	.container{
+		width:100%;
+	}
+
+	.d-sm-none {
+		display: none!important;
+	}
+
+	header > nav.navbar {
+		padding: 0px 30px;
+	}
+
+	.page-id-5 .carousel .carousel-caption {
+    top: 24%!important;
+	}
+
+	.bd-example > #carouselExampleCaptions {
+		margin-top: 56px
+	}
+
+	#main-page-head .carousel .carousel-caption {
+	 	top: 30%;
+	}
+	#main #carouselExampleCaptions h1 {
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+		#main-page-head.drive-slider #carouselExampleCaptions h1 {
+			font-size: 12-px!important;
+			margin-bottom: 2px;
+		}
+		#main-page-head.drive-slider .bd-example #carouselExampleCaptions button {
+			font-size: 8px;
+			padding: 8px 12px;
+		}
+		#main #carouselExampleCaptions h1 span.slogan {
+			 font-size: 11px!important;
+		}
+
+	.bd-example #carouselExampleCaptions #h1-bottom-about {
+		display: none;
+	}
+
+	.bd-example #carouselExampleCaptions button {
+		padding: 10px 15px;
+    	font-size: 10px;
+	}
+
+	.navbar-brand img {
+		width: 100px;
+	}
+
+	button.navbar-toggler span.navbar-toggler-icon {
+		width: 20px;
+		height: 20px;
+	}
+	header > nav.navbar {
+    padding-bottom: 17px;
+	}
+	#main-page-head .carousel .carousel-caption {
+	    top: 25%;
+	}
+	.homepage #main-page-head .carousel .carousel-caption {
+	    top: 8%;
+	}
+	#drive, #ship, #work, #dispatch, #sale {
+		text-align: center;
+	}
+
+	#sale {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	#dispatch button {
+		margin-bottom: 10px;
+	}
+	#carouselExampleIndicators a.carousel-control-prev,	#carouselExampleIndicators a.carousel-control-next {
+		width: 5%;
+	}
+		#carouselExampleIndicators a.carousel-control-prev span.carousel-control-prev-icon,	#carouselExampleIndicators a.carousel-control-next span.carousel-control-next-icon {
+		background-color: #f7911d;
+		width: 7px;
+		height: 7px;
+		}
+	#footer ul.footer-nav li a {
+		display: block!important;
+		padding-bottom: 8px;
+		border-right: 2px solid transparent;
+		text-decoration: underline;
+
+	}
+	#footer ul.footer-nav {
+		padding-left: 0px!important;
+	}
+	/* ==========  SLIDER TEXT ========== */
+	#main  .carousel-item .carousel-caption {
+		display: block!important;
+	}
+	#main #main-page-head h1 {
+	    font-size: 15px!important;
+	}
+	#about .carousel-item .carousel-caption {
+		display: block!important;
+		top: 15%!important;
+	}
+	#about #about-page-head h1 {
+	    font-size: 14px!important;
+	}
+		#about .carousel-item .carousel-caption p.h1-bottom-about {
+			display: block;
+		}
+	#drive_page  .carousel-item .carousel-caption {
+		display: block!important;
+		top: 15%!important;
+	}
+	#drive_page #main-page-head h1 {
+	    font-size: 16px!important;
+	}
+	#drive_page .carousel-item .carousel-caption p.h1-bottom-about {
+			display: block;
+	}
+
+	/* ==========  DRIVE COMPANY page ========== */
+
+	#drive_page .carousel .carousel-caption {
+    top: 9%;
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-main-text {
+		padding: 0px;
+		margin: 0px;
+		font-size: 10px;
+		color: #fff;
+		font-weight: 400;
+		line-height: 1.2;
+	}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img.play-btn {
+		width: 20px;
+		padding: 0px;
+		margin: 0px;
+	}
+		#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item img.play-btn:hover {
+			transition: 0.2s ease-in;
+			-webkit-transition: 0.2s ease-in;
+			-moz-transition: 0.2s ease-in;
+			background-color: transparent;
+			opacity: 0.8;
+		}
+	#drive_page #testimonials #carouselExampleCaptions-1 .carousel-item .slider-play-text {
+		font-size: 8px;
+		line-height: 3;
+	}
+	#drive_page #benefits .col img:first-child {
+		padding-top: 20px;
+	}
+	#drive_page #benefits p.benefit-text::before {
+		display: none;
+	}
+	#drive_page #driver-type {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+	#drive_page #driver-type .card {
+	    margin-bottom: 0px;
+	    margin-top: 0px;
+	}
+	#drive_page #dispatching #driver-type .card {
+		display: block!important;
+		width: 100%!important;
+	}
+	#drive_page #solution {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+	}
+	#drive_page #solution .card {
+	    margin-bottom: 0px;
+	    margin-top: 0px;
+	}
+	#drive_page #testimonials-2 img {
+		width: 10%
+	}
+		#drive_page #testimonials-2 img:first-child {
+			margin-top: 10px;
+		}
+	#drive_page #testimonials-2 .col-lg-4 {
+    border-right: 0px solid #9c9c9c;
+    padding-top: 0px;
+    padding-bottom: 0px;
+	}
+	#drive_page #testimonials-2 p.author-text {
+	    padding-bottom: 0px;
+	    padding-top: 0px;
+	}
+	#drive_page #testimonials-2 p.author {
+	    padding-bottom: 10px;
+	}
+	#drive_page #benefits-plan {
+    padding-top: 20px;
+    padding-bottom: 20px;
+	}
+	#benefits-plan h2.h2-benefits-plan {
+    padding-bottom: 15px;
+	}
+	#benefits-plan .benefits-box p {
+	    padding-bottom: 15px;
+	    text-align: center;
+	}
+	#benefits-plan .benefits-box > div::before {
+		display: none;
+	}
+	#drive_page #perks {
+    padding-top: 20px;
+    padding-bottom: 20px;
+	}
+	#perks h2 {
+    padding-bottom: 15px;
+	}
+	#perks .perks-box p {
+	    padding-bottom: 15px;
+	    text-align: center;
+	}
+	#perks .perks-box > div::before {
+		display: none;
+	}
+	#drive_page #join-community img {
+		margin-left: 10px;
+	}
+	#drive_page #bonus {
+		text-align: center;
+	}
+	#bonus ul li {
+	margin-bottom: 2px;
+	line-height: 1.889;
+	}
+	#form-block img {
+		width: 100%;
+	}
+
+	#bonus ul li {
+		list-style-type: none;
+	}
+
+	.hidden-mobile {
+		display: none!important;
+	}
+
+	#drive_page.ship #lets_talk {
+		text-align: center;
+	}
+		#drive_page.ship #lets_talk h2{
+			margin-bottom: 20px;
+		}
+	#drive_page #search_page #search_results button, #drive_page #search_page #sign-in-form button {
+		width: 100%!important;
+	}
+	#job-title-page .content-jt ul#social_navs {
+		padding: 10%;
+		padding-right: 10%;
+	}
+
+}
+
+.col-xs-five,
+.col-sm-five,
+.col-md-five,
+.col-lg-five,
+.col-xl-five {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-xs-five {
+  width: 20%;
+  float: left;
+}
+
+@media (min-width: 640px) {
+  .col-sm-five {
+    width: 100%;
+	text-align: center;
+	display: block;
+}
+
+@media (min-width: 768px) {
+  .col-md-five {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 1024px) {
+  .col-lg-five {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1440px) {
+  .col-xl-five {
+    width: 20%;
+    float: left;
+  }
+}

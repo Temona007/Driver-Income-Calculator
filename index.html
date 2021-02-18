@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/script.js"></script>
+
+    <!-- Chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+
+    <title>Company Driver Calculator</title>
+
+  </head>
+
+  <body>
+
+    <main id="drive_page">
+
+      <section id="form-block" class="">
+        <div class="container">
+          <div class="row" style="display:;">
+            <div class="col-lg-12">
+              <h2>Company Driver Income Potential</h2>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <form> 
+                <div class="form-group">
+                  <label for="trailer">What Trailer Type Do You Prefer To Haul?</label>
+                  <div id="form-text-1"></div>
+                  <select name="Trailer" class="form-control" id="trailer" required>
+                    <option value="2.35" selected>Flatbed</option>
+                    <option value="2.45">Step Deck</option>
+                    <option value="2.65">Lowboy / RGN</option>
+                  </select>
+                 </div>
+                <div class="form-group">
+                  <label for="heavyhoul">Are You Interested In Heavy Haul & Over-Size?</label>
+                  <div id="form-text-6"></div>
+                  <select name="HeavyHoul" class="form-control" id="heavyhoul" required>
+                    <option value="1" selected>Yes, I will haul anything</option>
+                    <option value="0">No, I am no interested</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="miles">How Many Miles Do You Drive Every Week?</label>
+                  <div id="form-text-2"></div>
+                  <select name="Miles" class="form-control" id="miles" required>
+                    <option value="2200">2200</option>
+                    <option value="2400">2400</option>
+                    <option value="2600">2600</option>
+                    <option value="2800" selected >2800</option>
+                    <option value="3000">3000</option>
+                    <option value="3200">3200</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="rookie">How Many Years Driving or Hauling Flatbed?</label>
+                  <div id="form-text-3"></div>
+                  <select name="Rookie" class="form-control" id="rookie" required>
+                    <option value="1">Interested in CDL Training</option>
+                    <option value="1">New CDL Driver / Graduate</option>
+                    <option value="1">I do not have flatbed experience</option>
+                    <option value="1">1-2  driving experience</option>
+                    <option value="0" selected >2-5 driving experience</option>
+                    <option value="0" >5-10+  driving experience</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="violations">How Many Driver Violations Do You Have?</label>
+                  <div id="form-text-4"></div>
+                  <select name="Viol" class="form-control" id="violations" required>
+                    <option value="0" selected>0 Driver </option>
+                    <option value="1">1 Driver </option>
+                    <option value="2">2 Driver </option>
+                    <option value="3">3 Driver </option>
+                  </select>
+                </div>
+                <button id="calculate_driver" name="calculate" type="button" class="btn btn-primary btn-lg btn-block mb-4" onclick="">CALCULATE</button>
+                <div class="form-group">
+                  <label for="violations" style="padding-bottom: 7px;">Check Box If You Agree To The Following:</label>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1" style="padding-bottom: 5px; font-size: 14px; font-weight: 400;">I can consistently perform proper truck and trailer inspections</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2" style="padding-bottom: 5px;  font-size: 14px; font-weight: 400;">I can communicate with owner, dispatcher, and shipper regularly</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                    <label class="custom-control-label" for="customCheck3" style="padding-bottom: 5px;  font-size: 14px; font-weight: 400;">I can properly secure, tarp, and transport freight on time</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                    <label class="custom-control-label" for="customCheck4" style="padding-bottom: 5px;  font-size: 14px; font-weight: 400;">I can be available to work 16-24 days every month</label>
+                  </div>
+                 <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label" for="customCheck5" style="padding-bottom: 5px;  font-size: 14px; font-weight: 400;">I can work weekends if necessary to meet my income goal</label>
+                  </div>
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck6">
+                    <label class="custom-control-label" for="customCheck6" style="padding-bottom: 5px;  font-size: 14px; font-weight: 400;">I will be professional while working with MadCo and affiliates</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-8 right-side-income">
+              <div class="row text-center">
+                <div class="col-lg-3">
+                  <p>Average Revenue per Mile</p>
+                  <button id="result_box_mile" type="button btn-lg btn-block" class="btn btn-primary price">$</button>
+                </div>
+                <div class="col-lg-3">
+                  <p>Average Revenue per Week</p>
+                  <button id="result_box_week" type="button btn-lg btn-block" class="btn btn-primary price">$</button>
+                </div>
+                <div class="col-lg-3">
+                  <p>Average Revenue per Month</p>
+                  <button id="result_box_month" type="button btn-lg btn-block" class="btn btn-primary timer">$</button>
+                </div>
+                <div class="col-lg-3">
+                  <p>Average Revenue per Year</p>
+                  <button id="result_box_year" type="button btn-lg btn-block" class="btn btn-primary timer">$</button>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-lg-12">
+                  <div id="madco-chart" style="min-width: 350px; height: 600px; margin: 0 auto"></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-lg-12">
+              <p class="under-form-text">Typical weekly miles are between 2,200 - 3,200 at MadCo, depending on driver preferences, market conditions, and other factors. National salary average is based on a 3,000-mile week in US trucking companies according to Zip Recruiter. The calculation above is an estimate, does not guarantees your exact income and is pre-tax income.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- Chart -->
+    <script src="js/driver-calculator.js"></script>
+
+  </body>
+
+</html>
